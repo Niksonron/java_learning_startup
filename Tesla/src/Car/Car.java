@@ -1,33 +1,27 @@
 package Car;
-import Wheel.Wheel;
 
 public class Car {
     public String carName, carModel;
-
-    public String getCarName() {
-        return carName;
-    }
-
-    public String getCarModel() {
-        return carModel;
-    }
+    Engine engine;
+    Wheel wheels;
 
 
-    Wheel tires = new Wheel("TOYO", 4);
+
+
 
     public Car (String carName, String carModel){
         this.carModel = carModel;
         this.carName = carName;
-
     }
 
 
     @Override
     public String toString() {
         return "Car{" +
-                "carName='" + carName + '\'' +
-                ", carModel='" + carModel + '\'' +
-                ", tires=" + tires +
+                "Car='" + carName + '\'' +
+                ", Model='" + carModel + '\'' +
+                ", Engine=" + engine +
+                ", Wheels=" + wheels +
                 '}';
     }
 }

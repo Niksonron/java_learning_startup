@@ -1,4 +1,4 @@
-package Wheel;
+package Car;
 
 public class Wheel {
     public String wheelLabel;
