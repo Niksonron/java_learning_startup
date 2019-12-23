@@ -12,21 +12,29 @@ public class Engine implements Enginein {
         return engineNum;
     }
 
-    public void setEngineNum(int engineNum) {
+    public void setEngineNum() {
         Random r = new Random();
         int min = 1000;
         int max = 10000;
         int range = max - min;
         range = r.nextInt(max - min);
         this.engineNum = range;
+        System.out.println(range);
     }
 
+    public int getEnginePower() {
+        return enginePower;
+    }
 
-
-        public Engine (String engineLabel, int enginePower){
+    public Engine (String engineLabel, int enginePower){
         this.engineLabel = engineLabel;
         this.enginePower = enginePower;
         }
+
+
+    public String getEngineLabel() {
+        return engineLabel;
+    }
 
     @Override
     public String toString() {
